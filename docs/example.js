@@ -1,4 +1,4 @@
-const { LevelDB } = require('leveldb-zlib')
+const { LevelDB } = require('@8crafter/leveldb-zlib')
 
 async function basicTest (pathToDb) {
   const db = new LevelDB(pathToDb, { createIfMissing: true })

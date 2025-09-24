@@ -1,3 +1,7 @@
+## 1.3.0
+
+* The build function now has a minumum cmake version of 3.5 instead of 3.2 to stop cmake-js from throwing errors.
+
 ## 1.2.0
 * Add async iterator support for LevelDB and Iterator, use with `for await`
 
@@ -7,7 +11,7 @@
 ## 1.1.0
 * Fix `LevelDB.repair()` and `LevelDB.destory()` methods, and make them static, use as such:
 ```js
-import { LevelDB } from 'leveldb-zlib'
+import { LevelDB } from '@8crafter/leveldb-zlib'
 await LeveDB.repair('./db')
 ```
 

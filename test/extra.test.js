@@ -1,5 +1,5 @@
 /* eslint-env mocha */
-const { LevelDB } = require('leveldb-zlib')
+const { LevelDB } = require('@8crafter/leveldb-zlib')
 const assert = require('assert')
 const fs = require('fs')
 const sleep = require('timers/promises').setTimeout

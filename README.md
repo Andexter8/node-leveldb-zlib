@@ -1,15 +1,17 @@
-# node-leveldb-zlib
+# 8Crafter's node-leveldb-zlib
 [![NPM version](https://img.shields.io/npm/v/leveldb-zlib.svg)](http://npmjs.com/package/leveldb-zlib)
-[![Build Status](https://github.com/extremeheat/node-leveldb-zlib/workflows/CI/badge.svg)](https://github.com/extremeheat/node-leveldb-zlib/actions?query=workflow%3A%22CI%22)
+[![Build Status](https://github.com/Andexter8/node-leveldb-zlib/workflows/CI/badge.svg)](https://github.com/Andexter8/node-leveldb-zlib/actions?query=workflow%3A%22CI%22)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/GsEFRM8)
-[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/extremeheat/node-leveldb-zlib)
+[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/Andexter8/node-leveldb-zlib)
 
 LevelDB bindings for Node.js with zlib compression, with a modern promise-based API that actually builds! 🌊
+
+This is a fork of [node-leveldb-zlib](https://npmjs.com/package/leveldb-zlib) that fixed the errors caused by the minimum CMake version being set too low.
 
 ## Install
 
 ```sh
-npm install leveldb-zlib
+npm install @8crafter/leveldb-zlib
 ```
 
 Prebuilds are provided for 64-bit Windows 10, Linux and macOS Catalina. If a prebuild does not work, please create an issue and set enviornment variable FORCE_BUILD to force a manual build.
@@ -18,7 +20,7 @@ Prebuilds are provided for 64-bit Windows 10, Linux and macOS Catalina. If a pre
 Some example usage to create a new Key-Value database and save once you're done. The API is very similar to leveldown.
 
 ```js
-const { LevelDB } = require('leveldb-zlib')
+const { LevelDB } = require('@8crafter/leveldb-zlib')
 
 const db = new LevelDB(pathToDb, { createIfMissing: true })
 await db.open() // Make sure to wait for DB to open!
@@ -33,7 +35,7 @@ await db.close() // Make sure to save and close when you're done!
 
 If cloning from git, you must clone this repo recursively.
 ```sh
-git clone --recursive https://github.com/extremeheat/node-leveldb-zlib
+git clone --recursive https://github.com/Andexter8/node-leveldb-zlib
 ```
 
 ## Dependencies
