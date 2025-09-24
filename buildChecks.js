@@ -32,7 +32,7 @@ async function runChecks () {
     cp.execSync('git submodule update', { stdio: 'inherit' })
 
     if (!fs.existsSync('./leveldb-mcpe/include')) { // npm install does not clone submodules...
-      cp.execSync('git clone https://github.com/extremeheat/leveldb-mcpe') // so do it manually
+      cp.execSync('git clone https://github.com/Andexter8/leveldb-mcpe') // so do it manually
 
       if (!fs.existsSync('./leveldb-mcpe/include')) { // gie up
         console.error('******************* READ ME ****************\n')
