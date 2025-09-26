@@ -1,8 +1,16 @@
 // Some helpful pre-build enviornment checks
 const fs = require('fs')
 const cp = require('child_process')
+const os = require("os");
+
+const _osVersion = os.release();
+
+const plat = process.platform;
+const arch = process.arch;
+const ver = _osVersion.split(".", 1)[0];
 
 function checkIfPrebuildExists () {
+  console.log(`[leveldb] platform details: ${plat}-${ver}-${arch}${process.env.LEVELDB_ZLIB_ARCH_OVERRIDE ? ` (with architecture override: ${process.env.LEVELDB_ZLIB_ARCH_OVERRIDE})` : ''}`)
   try {
     const bindings = require('./binding')
     if (!bindings) throw Error('Bindings are undefined')

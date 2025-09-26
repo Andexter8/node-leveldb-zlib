@@ -1,3 +1,7 @@
+## 1.4.1
+
+* Added an extra debug log when installing.
+
 ## 1.4.0
 
 * Added the ability to read node-leveldb binaries when the version portion of the path does not exactly match the version of the OS, it will try to find an exact match, and if it can't it will try to find the closest match to the version, that does exactly match the OS type and architecture.
