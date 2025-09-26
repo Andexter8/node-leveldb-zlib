@@ -1,3 +1,8 @@
+## 1.5.1
+
+* Added the ability to override the architecture name use for cmake separately with the LEVELDB_ZLIB_CMAKE_ARCH_OVERRIDE environment variable.
+* Updated `cmake-js` from v6.3.2 to v7.3.1.
+
 ## 1.5.0
 
 * Added the ability for the architecture name override to force cmake to also build for that architecture.

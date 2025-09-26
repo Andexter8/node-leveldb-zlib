@@ -32,6 +32,8 @@ await db.close() // Make sure to save and close when you're done!
 
 To override the architecture to build for, set the `LEVELDB_ZLIB_ARCH_OVERRIDE` environment variable.
 
+You can override the CMake architecture separately with the `LEVELDB_ZLIB_CMAKE_ARCH_OVERRIDE` environment variable.
+
 
 ## Cloning
 
