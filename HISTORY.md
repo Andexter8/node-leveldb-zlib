@@ -1,3 +1,7 @@
+## 1.5.0
+
+* Added the ability for the architecture name override to force cmake to also build for that architecture.
+
 ## 1.4.1
 
 * Added an extra debug log when installing.
