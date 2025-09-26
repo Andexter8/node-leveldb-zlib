@@ -86,7 +86,7 @@ if (runCmake) {
   runChecks().then(
     () => {
       console.log('Build checks are passing! Building...')
-      cp.execSync(`cmake-js compile${process.env.LEVELDB_ZLIB_ARCH_OVERRIDE ? ` --arch ${process.env.LEVELDB_ZLIB_ARCH_OVERRIDE}` : ''}`, { stdio: 'inherit' })
+      cp.execSync(`cmake-js compile${(process.env.LEVELDB_ZLIB_CMAKE_ARCH_OVERRIDE ?? process.env.LEVELDB_ZLIB_ARCH_OVERRIDE) ? ` --arch ${(process.env.LEVELDB_ZLIB_CMAKE_ARCH_OVERRIDE ?? process.env.LEVELDB_ZLIB_ARCH_OVERRIDE)}` : ''}`, { stdio: 'inherit' })
     }
   )
 }
