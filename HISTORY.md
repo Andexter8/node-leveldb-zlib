@@ -1,3 +1,8 @@
+## 1.4.0
+
+* Added the ability to read node-leveldb binaries when the version portion of the path does not exactly match the version of the OS, it will try to find an exact match, and if it can't it will try to find the closest match to the version, that does exactly match the OS type and architecture.
+* Added the ability to override the architecture name used in the path with the LEVELDB_ZLIB_ARCH_OVERRIDE environment variable.
+
 ## 1.3.0
 
 * The build function now has a minumum cmake version of 3.5 instead of 3.2 to stop cmake-js from throwing errors.
